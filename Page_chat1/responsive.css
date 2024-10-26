@@ -1,0 +1,250 @@
+@media screen and (min-width:230px) and (max-width:999px){
+/* body */
+body{
+    --formChatHeight:100%;
+    --formChatWidth:100%;
+    --groupChatHeight:100%;
+    --corpsheight:85vh;
+}
+/* body */
+
+/* main_menu */
+nav{
+    display: none;
+}
+/* main_menu */
+
+ /* header */
+.menu{
+    display: block;
+}
+.logo strong{
+    font-size: 20px;
+}
+/* header */
+
+/*  section*/
+.headerChat{
+ display: none;
+}
+.chat .texte{
+    font-size: 1em;
+    max-width: 55%;
+    /* margin-top: 5px; */
+}
+.chat .profil span{
+    color:var(--bodyBack);
+    font-size: 30px;
+}
+.chat .profil img{
+    width: 35px;
+    height: 35px;
+}
+.message textarea{
+    height: 35px;
+}
+.message span{
+    font-size: 25px;
+}
+.speech{
+    display: none;
+}
+.message form{
+    width: 100%;
+}
+.speech_menu{
+    display: flex;
+    gap: 10px;
+}
+.speech_menu .speech{
+    display: block;
+}
+.speech .sond_off,.speech .sond_off:hover{
+    color:rgb(255, 255, 255);
+}
+.speech .sond_on,.speech .sond_on:hover{
+    margin-right: 10px;
+    color:rgb(0, 255, 21);
+}
+
+/*  section*/
+}
+@media screen and (min-width:460px){
+    .logo strong{
+        font-size: 25px;
+    }   
+    .speech_menu span, .speech .sond_off,.speech .sond_on{
+        font-size: 28px;
+    }
+    .message span{
+        font-size: 30px;
+    }
+    .chat .texte{
+        font-size: 1.05em;
+    }
+}
+@media screen and (min-width:255px){
+    .main_menu{
+        left: 43vw;
+    }
+    @keyframes menus_on{
+        from{
+            left: -43vw;
+            opacity: 0%;
+        }
+        to{
+            left: 43vw;
+            opacity: 100%;
+        }
+    }
+    @keyframes menus_off{
+        from{
+            left: 43vw;
+            opacity: 100%;
+        }
+        to{
+            left: -43vw;
+            opacity: 0%;
+        }
+    }
+}
+
+@media screen and (min-width:300px){
+    .main_menu{
+        left: 44vw;
+        /* width: 50%; */
+    }
+    @keyframes menus_on{
+        from{
+            left: -44vw;
+            opacity: 0%;
+        }
+        to{
+            left: 44vw;
+            opacity: 100%;
+        }
+    }
+    @keyframes menus_off{
+        from{
+            left: 44vw;
+            opacity: 100%;
+        }
+        to{
+            left: -44vw;
+            opacity: 0%;
+        }
+    }
+}
+@media screen and (min-width:360px){
+    .main_menu{
+        left: 44.5vw;
+        /* width: 50%; */
+    }
+    @keyframes menus_on{
+        from{
+            left: - 44.5vw;
+            opacity: 0%;
+        }
+        to{
+            left:  44.5vw;
+            opacity: 100%;
+        }
+    }
+    @keyframes menus_off{
+        from{
+            left: 44.5vw;
+            opacity: 100%;
+        }
+        to{
+            left: - 44.5vw;
+            opacity: 0%;
+        }
+    }
+}
+@media screen and (min-width:440px){
+    .main_menu{
+        left: 47vw;
+        width: 48%;
+    }
+    @keyframes menus_on{
+        from{
+            left: -47vw;
+            opacity: 0%;
+        }
+        to{
+            left: 47vw;
+            opacity: 100%;
+        }
+    }
+    @keyframes menus_off{
+        from{
+            left: 47vw;
+            opacity: 100%;
+        }
+        to{
+            left: -47vw;
+            opacity: 0%;
+        }
+    }
+}
+@media screen and (min-width:500px){
+    .main_menu{
+        left: 48.5vw;
+    }
+    @keyframes menus_on{
+        from{
+            left: -48.5vw;
+            opacity: 0%;
+        }
+        to{
+            left: 48.5vw;
+            opacity: 100%;
+        }
+    }
+    @keyframes menus_off{
+        from{
+            left: 48.5vw;
+            opacity: 100%;
+        }
+        to{
+            left: -48.5vw;
+            opacity: 0%;
+        }
+    }
+}
+@media screen and (min-width:680px){
+    .main_menu{
+        left: 49vw;
+    }
+    @keyframes menus_on{
+        from{
+            left: -49vw;
+            opacity: 0%;
+        }
+        to{
+            left: 49vw;
+            opacity: 100%;
+        }
+    }
+    @keyframes menus_off{
+        from{
+            left: 49vw;
+            opacity: 100%;
+        }
+        to{
+            left: -49vw;
+            opacity: 0%;
+        }
+    }
+}
+
+/* @media screen and (min-width:1000px){
+    body{
+        --formChatWidth:38%;
+    }
+}
+@media screen and (min-width:1126px)and (max-width:1270px){
+    body{
+        --formChatWidth:38%;
+    }
+} */

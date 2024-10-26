@@ -1,0 +1,225 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(239, 248, 247);
+    --headerBack:rgb(47, 58, 109);
+    --headerText:rgb(255, 255, 255);
+    --bodyBack:rgb(140, 143, 167);
+    --formChatWidth:39%;
+    --headerChatHeight:50px;
+    --formChatHeight:90%;
+    --corpsheight:90.6vh;
+    --groupChatHeight:calc((100%) - var(--headerChatHeight));
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--headerBack);
+}
+.logo strong{
+    background-image: linear-gradient(to left,rgb(0, 38, 255),rgb(255, 0, 119),rgb(21, 255, 0),rgb(255, 251, 0));
+    color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-size: 25px;
+}
+.menu{
+    display: none;
+    margin-right: 3px;
+}
+#menu{
+    transition: 1s;
+}
+.menu span{
+    color: white;
+    font-size: 25px;
+}
+.main_menu{
+    width: 50%;
+    height:max-content;
+    padding: 16px 10px 60px 10px;
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 0, 157);
+    margin-top: -2px;
+    left: 42vw;
+    transition: 1.5s;
+}
+.main_menu li{
+    list-style: none;
+}
+.main_menu div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.main_menu_anim_on{
+    animation: menus_on 2s;
+}
+.main_menu_anim_off{
+    animation: menus_off 2s;
+}
+@keyframes menus_on{
+    from{
+        left: -42vw;
+        opacity: 0%;
+    }
+    to{
+        left: 42vw;
+        opacity: 100%;
+    }
+}
+@keyframes menus_off{
+    from{
+        left: 42vw;
+        opacity: 100%;
+    }
+    to{
+        left: -50vw;
+        opacity: 0%;
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    margin-right: 10px;
+}
+nav a{
+    color:var(--headerText) ;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 1s;
+    font-weight: bold;
+}
+nav a:hover{
+    transition: 1s;
+    color: rgb(247, 0, 255);
+}
+
+.corps{
+    background-color: var(--bodyBack);
+    height:var(--corpsheight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formChat{
+    width:var(--formChatWidth) ;
+    height: var(--formChatHeight);
+    background-color: white;
+}
+.headerChat{
+    background-color: rgb(255, 0, 157);
+    height: var(--headerChatHeight);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerChat strong{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.groupChat{
+    /* background-color: lime; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height:var(--groupChatHeight) ;
+}
+.chats{
+    height: 100%;
+    overflow-x: hidden;
+}
+.chat{
+    display: flex;
+    gap: 3px;
+    margin-top: 10px;
+}
+.chat .profil img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.chat .profil span{
+    color:var(--bodyBack);
+    font-size: 30px;
+}
+.chat .texte{
+    font-size: 17px;
+    /* min-width:max-content ; */
+    max-width:40%;
+    /* overflow: hidden; */
+    color: white;
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+}
+.robot .texte{
+    background-color: rgb(45, 108, 116);
+}
+.you .texte{
+    background-color: rgb(156, 35, 204);
+}
+.you {
+    justify-content: end;
+}
+.message{
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+ }
+.message form{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: end;
+ }
+.message textarea{
+    width: 90%;
+    padding: 5px;
+    resize: none;
+    font-size: 13px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid var(--bodyBack);
+}
+.message span{
+    font-size: 35px;
+    color: rgb(255, 0, 157);
+    transition: 1s;
+}
+.message span:hover{
+   color:rgb(156, 35, 204);
+    transition: 1s;
+}
+#send_message{
+    background-color: transparent;
+    border: none;
+}
+.speech .sond_off{
+    font-size: 23px;
+    margin-right: 10px;
+    color:rgb(89, 94, 95);
+}
+.speech .sond_off:hover{
+    color: rgb(42, 48, 43);
+}
+.speech .sond_on{
+    font-size: 23px;
+    margin-right: 10px;
+    color:rgb(9, 63, 212);
+}
+.speech .sond_on:hover{
+    color:rgb(9, 63, 212);
+}
